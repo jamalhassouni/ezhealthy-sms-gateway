@@ -8,35 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:418089335741:android:6691bec28baece169230d4",
-        "android_client_info": {
-          "package_name": "com.ezhealthy.ezsmsgateway"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "418089335741-7nvjnlpphu387rtc9hmr0pad7dsbnhe1.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCsek-najm8UcL3ftHt8lGl-GbR_6umKCY"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "418089335741-7nvjnlpphu387rtc9hmr0pad7dsbnhe1.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:418089335741:android:52049fdf87b51b079230d4",
         "android_client_info": {
           "package_name": "com.ezsms"

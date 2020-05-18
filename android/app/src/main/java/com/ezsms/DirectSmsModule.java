@@ -2,9 +2,7 @@ package com.ezsms; //make sure to change to your project's actual name.
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.uimanager.IllegalViewOperationException;
 import android.telephony.SmsManager; //++ make sure this package is available always
 
 public class DirectSmsModule extends ReactContextBaseJavaModule {

@@ -2,7 +2,6 @@ package com.ezsms;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactInstanceManager;
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableMap;
@@ -22,15 +21,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
-import com.google.firebase.messaging.FirebaseMessaging;
 
 import androidx.annotation.NonNull;
 
 public class MainActivity extends ReactActivity {
-  public static final String TAG = "MyTag";
-
-  private LocalBroadcastManager localBroadcastManager;
-  private ReactContext reactContext;
 
   /**
    * Returns the name of the main component registered from JavaScript. This is

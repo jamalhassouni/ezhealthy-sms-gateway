@@ -15,7 +15,6 @@ import java.util.List;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.telephony.SmsManager;
-import android.telephony.SmsMessage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,8 +22,6 @@ import org.json.JSONObject;
 public class FirebaseCloudMessagingService extends FirebaseMessagingService {
 
     private final static String TAG = FirebaseCloudMessagingService.class.getSimpleName();
-    private final String SERVER = "https://8a9c9a02.ngrok.io/EzsmsAPI/reg_device0.php";
-    private final int REQ_CODE_PERMISSION_SEND_SMS = 221;
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {

@@ -7,6 +7,7 @@ import {
   PermissionsAndroid,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {isEmpty, storeToken, getToken} from './utils';
 
 class App extends Component {
   constructor(props) {
@@ -17,10 +18,18 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    DeviceEventEmitter.addListener('getDeviceToken', (token) => {
-      this.setState({token});
-      console.log('Device Token', token);
+    await DeviceEventEmitter.addListener('getDeviceToken', (token) => {
+      if (!isEmpty(token)) {
+        storeToken(token);
+        console.log('Device Token', token);
+      }
     });
+
+    let storedToken = await getToken();
+    if (!isEmpty(storedToken)) {
+      this.setState({token: storedToken});
+    }
+
     try {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.SEND_SMS,
